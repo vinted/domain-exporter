@@ -1,0 +1,10 @@
+project_name: domain-exporter
+builds:
+  - env: [CGO_ENABLED=0]
+    goos:
+      - linux
+    goarch:
+      - amd64
+    id: "domain-exporter"
+    dir: .
+    main: ./cmd/domain-exporter
