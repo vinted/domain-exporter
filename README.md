@@ -2,6 +2,8 @@
 
 A simple Prometheus exporter that queries top-level domain (TLD) authoritative nameservers and exports DNS return codes (RCODE) as metrics.
 
+It can be used to monitor domains directly at the registry level, bypassing DNS caching to catch critical registrar or registry issues that standard monitoring might miss. A real-world example of this would be the application of a problematic EPP domain status code, such as `serverHold`, which would result in an `NXDOMAIN` response.
+
 ## Configuration
 
 Create a YAML configuration file containing the list of domains you wish to monitor:
