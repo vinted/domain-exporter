@@ -1,0 +1,7 @@
+services:
+  domain-exporter:
+    build: .
+    ports:
+      - "9553:9553"
+    volumes:
+      - ./config.example.yaml:/etc/domain-exporter/config.yaml:ro

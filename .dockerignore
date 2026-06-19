@@ -1,0 +1,12 @@
+.dockerignore
+.git
+.github
+.gitignore
+.go-version
+.goreleaser.yaml
+/domain-exporter
+config.example.yaml
+docker-compose.yaml
+Dockerfile
+LICENSE
+README.md
