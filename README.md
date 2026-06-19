@@ -29,6 +29,17 @@ Start the exporter:
 ./domain-exporter --config_path=/path/to/config.yaml --http_listen_address=0.0.0.0:9553
 ```
 
+Or build and run as a docker container, mounting your configuration file:
+
+```bash
+docker build -t domain-exporter .
+
+docker run \
+  -p 9553:9553 \
+  -v /path/to/config.yaml:/etc/domain-exporter/config.yaml:ro \
+  domain-exporter
+```
+
 Verify that the exporter is running by cURLing the `/metrics` endpoint:
 
 ```bash
