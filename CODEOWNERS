@@ -1,0 +1,3 @@
+# Code owners for this repository (source of truth: service catalog spec.owner).
+# See https://vinted.atlassian.net/wiki/spaces/IN/pages/32147145795/ADR+Write+access+for+engineering+to+make+pull-requests
+* @vinted/traffic-routing
